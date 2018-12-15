@@ -1,4 +1,4 @@
-package com.example.kwanat.mma_mobilemanagementassistant.DB;
+package com.example.kwanat.mma.DB;
 
 import android.util.Log;
 
@@ -8,7 +8,7 @@ import com.j256.ormlite.support.ConnectionSource;
 import java.sql.SQLException;
 
 /**
- * Created by Kamil on 20.10.2017.
+ * Created by Kamil on 10.12.2018.
  */
 
 public class Connection {

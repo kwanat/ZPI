@@ -1,15 +1,15 @@
-package com.example.kwanat.mma_mobilemanagementassistant.DB.WriteDao;
+package com.example.kwanat.mma.DB.WriteDao;
 
 
 import android.util.Log;
 
-import com.example.kwanat.mma_mobilemanagementassistant.DB.Connection;
-import com.example.kwanat.mma_mobilemanagementassistant.DB.Tables.Vacation;
+import com.example.kwanat.mma.DB.Connection;
+import com.example.kwanat.mma.DB.Tables.Vacation;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.dao.DaoManager;
 
 /**
- * Created by Kamil on 21.10.2017.
+ * Created by Kamil on 10.12.2018.
  */
 public class VacationWriteDao {
 

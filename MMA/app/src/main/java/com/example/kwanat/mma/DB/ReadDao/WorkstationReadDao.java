@@ -1,10 +1,10 @@
-package com.example.kwanat.mma_mobilemanagementassistant.DB.ReadDao;
+package com.example.kwanat.mma.DB.ReadDao;
 
 
 import android.util.Log;
 
-import com.example.kwanat.mma_mobilemanagementassistant.DB.Connection;
-import com.example.kwanat.mma_mobilemanagementassistant.DB.Tables.Workstation;
+import com.example.kwanat.mma.DB.Connection;
+import com.example.kwanat.mma.DB.Tables.Workstation;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.dao.DaoManager;
 import com.j256.ormlite.stmt.QueryBuilder;
@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- * Created by Kamil on 22.10.2017.
+ * Created by Kamil on 10.12.2018.
  */
 
 public class WorkstationReadDao {

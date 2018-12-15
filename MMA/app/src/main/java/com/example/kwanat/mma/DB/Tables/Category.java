@@ -4,7 +4,7 @@ import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
 /**
- * Created by Kamil on 20.10.2017.
+ * Created by Kamil on 10.12.2018.
  */
 
 @DatabaseTable(tableName = "Category")

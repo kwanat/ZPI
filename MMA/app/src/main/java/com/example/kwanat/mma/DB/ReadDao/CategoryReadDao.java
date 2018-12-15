@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- * Created by Kamil on 22.10.2017.
+ * Created by Kamil on 10.12.2018.
  */
 
 public class CategoryReadDao {
