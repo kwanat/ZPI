@@ -81,7 +81,9 @@ public class BaseActivity extends AppCompatActivity
         }
         return super.onOptionsItemSelected(item);
     }
-
+	
+	
+	
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
