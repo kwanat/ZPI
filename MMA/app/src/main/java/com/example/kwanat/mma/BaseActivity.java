@@ -70,7 +70,6 @@ public class BaseActivity extends AppCompatActivity
                     intent=new Intent(getApplicationContext(),LoginActivity.class);
                     startActivity(intent);
                 }
-
             }
         });
     }
