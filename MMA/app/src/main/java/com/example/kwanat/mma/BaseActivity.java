@@ -73,7 +73,6 @@ public class BaseActivity extends AppCompatActivity
             }
         });
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -81,7 +80,6 @@ public class BaseActivity extends AppCompatActivity
             return true;
         }
         return super.onOptionsItemSelected(item);
-
     }
 
     @Override
