@@ -59,7 +59,12 @@ public class BaseActivity extends AppCompatActivity
             public void onItemClick(AdapterView<?> parent, View arg1, int pos, long arg3) {
                 String item = (String) parent.getAdapter().getItem(pos);
                 Intent intent;
-               
+                if(item.equals(getResources().getString(R.string.homeMenu)))
+                {
+                    intent=new Intent(getApplicationContext(),StartActivity.class);
+                    startActivity(intent);
+                }
+
                 if(item.equals(getResources().getString(R.string.logoutMenu)))
                 {
                     SharedPreferences preferences = getSharedPreferences(LoggedUser.PREFERENCE_NAME, Activity.MODE_PRIVATE);
