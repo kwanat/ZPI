@@ -75,13 +75,9 @@ public class BaseActivity extends AppCompatActivity
                     intent=new Intent(getApplicationContext(),LoginActivity.class);
                     startActivity(intent);
                 }
-
-
-
             }
         });
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -89,9 +85,8 @@ public class BaseActivity extends AppCompatActivity
             return true;
         }
         return super.onOptionsItemSelected(item);
-
     }
-
+	
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
