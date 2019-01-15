@@ -64,7 +64,57 @@ public class BaseActivity extends AppCompatActivity
                     intent=new Intent(getApplicationContext(),StartActivity.class);
                     startActivity(intent);
                 }
-
+                if(item.equals(getResources().getString(R.string.addMessageMenu)))
+                {
+                    intent=new Intent(getApplicationContext(),AddMessage.class);
+                    startActivity(intent);
+                }
+                if(item.equals(getResources().getString(R.string.addEmployeeMenu)))
+                {
+                    intent=new Intent(getApplicationContext(),AddUserActivity.class);
+                    startActivity(intent);
+                }
+                if(item.equals(getResources().getString(R.string.addVacationMenu)))
+                {
+                    intent=new Intent(getApplicationContext(),AddVacationRequest.class);
+                    startActivity(intent);
+                }
+                if(item.equals(getResources().getString(R.string.showEmployeesMenu)))
+                {
+                    intent=new Intent(getApplicationContext(),ShowEmployeeList.class);
+                    startActivity(intent);
+                }
+                if(item.equals(getResources().getString(R.string.showVacationMenu)))
+                {
+                    intent=new Intent(getApplicationContext(),ShowVacationRequests.class);
+                    startActivity(intent);
+                }
+                if(item.equals(getResources().getString(R.string.passwordMenu)))
+                {
+                    intent=new Intent(getApplicationContext(),ChangePasswordActivity.class);
+                    startActivity(intent);
+                }
+                if(item.equals(getResources().getString(R.string.myVacationMenu)))
+                {
+                    intent=new Intent(getApplicationContext(),ShowUserVacationActivity.class);
+                    startActivity(intent);
+                }
+                if(item.equals(getResources().getString(R.string.viewWarehouseMenu)))
+                {
+                    intent=new Intent(getApplicationContext(),ShowWarehouseActivity.class);
+                    startActivity(intent);
+                }
+                if(item.equals(getResources().getString(R.string.scheduleMenu)))
+                {
+                    intent=new Intent(getApplicationContext(),ScheduleActivity.class);
+                    startActivity(intent);
+                }
+                if(item.equals(getResources().getString(R.string.changeDataMenu)))
+                {
+                    intent=new Intent(getApplicationContext(),ChangeUserActivity.class);
+                    intent.putExtra("user_id",user.getUser().getId());
+                    startActivity(intent);
+                }
                 if(item.equals(getResources().getString(R.string.logoutMenu)))
                 {
                     SharedPreferences preferences = getSharedPreferences(LoggedUser.PREFERENCE_NAME, Activity.MODE_PRIVATE);
@@ -75,9 +125,13 @@ public class BaseActivity extends AppCompatActivity
                     intent=new Intent(getApplicationContext(),LoginActivity.class);
                     startActivity(intent);
                 }
+
+
+
             }
         });
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -85,8 +139,9 @@ public class BaseActivity extends AppCompatActivity
             return true;
         }
         return super.onOptionsItemSelected(item);
+
     }
-	
+
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
